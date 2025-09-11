@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+}
+
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    min-height: 700px;
+    min-width: 1250px;
+}
+
+.grid {
+    display: grid;
+    height: 100%;
+    width: 100%;
+}
+
+.area {
+    padding: 1em;
+}
+
+.blue, .green, .orange, .white, .main, body {
+    border: 1px solid black;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.blue {
+    background-color: rgb(187, 187, 239);
+}
+
+.orange {
+    background-color: rgb(251, 230, 170);
+}
+
+.green {
+    background-color: rgb(193, 231, 185);
+}
+
+.white {
+    background-color: rgb(255, 255, 255);
+}
+
+#page {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 97vh;
+    height: auto;
+    
+}
+
+#block23456 {
+    grid-template-columns: 77% auto;
+}
+
+#block2356 {
+    grid-template-rows: auto 3em;
+}
+
+#block235 {
+    grid-template-columns: 30% auto;
+}
+
+#block35 {
+    grid-template-rows: 4em 1fr;
+}
+
+#block23456 h2{
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+#block1, #block7 {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+#block1 p, #block7 p {
+    margin: 0.75em;
+    justify-self: left;
+}
+
+#x, #y {
+    padding: 0.75em;
+    padding-right: 1.5em;
+    margin-right: 1.5em;
+    min-width: 450px;
+    width: fit-content;
+    align-content: center;
+}
+
+#x {
+    text-align: center;
+    justify-self: right;
+}
+
+#y {
+    text-align: right;
+    justify-self: right;
+}
+
+#block2 {
+    align-content: top;
+    justify-items: center;
+    padding-top: 1.5em;
+}
+
+#block4 {
+    align-content:top;
+    justify-items: center;
+    padding-left: 5px;
+    padding-top: 1.5em;
+}
+
+#block3 {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 5em;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#block3 ul li{
+    display: inline;
+    list-style: none;
+    padding: 0.3em 1.2em;
+}
+
+#block3 ul li a {
+    text-decoration: none; 
+}
+
+a:visited {
+    color: rgb(39, 44, 40);
+}
+
+#block4 ul li{
+    margin: 4px;
+}
+
+#block2 ol li{
+    margin: 4px;
+}
+
+#block6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12%;
+}
+#block6 img {
+    height: 32px;
+}
+
+#block5 p {
+    margin-bottom: 1em;
+    text-indent: 2em;
+}
+
+#block5 {
+    text-align: justify;
+    padding: 1.5em;
+}
+
+.float-img {
+    float: left;
+    margin: 1em 1.5em 0.75em 0;
+    width: 13em;
+}

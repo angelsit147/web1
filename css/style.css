@@ -135,11 +135,6 @@ body {
 
 #block3 ul li a {
     text-decoration: none;
-    color: black;
-}
-
-a:visited {
-    color: rgb(39, 44, 40);
 }
 
 #block4 ul li{

@@ -134,7 +134,8 @@ body {
 }
 
 #block3 ul li a {
-    text-decoration: none; 
+    text-decoration: none;
+    color: black;
 }
 
 a:visited {

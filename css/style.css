@@ -75,7 +75,7 @@ body {
 
 #block23456 h2{
     text-align: center;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.3em;
 }
 
 #block1, #block7 {
@@ -163,10 +163,12 @@ body {
 
 #block4 ul li{
     margin: 6px;
+    margin-top: 2px;
 }
 
 #block2 ol li{
     margin: 6px;
+    margin-top: 2px;
 }
 
 #block6 {

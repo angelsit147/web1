@@ -48,7 +48,7 @@ body {
 
 #page {
     grid-template-rows: auto 1fr auto;
-    min-height: 99vh;
+    min-height: 97vh;
     height: auto;
     
 }
@@ -92,8 +92,8 @@ body {
 #x, #y {
     padding: 0.75em 1.5em;
     margin-right: 1.5em;
-    width: fit-content;
     min-width: 450px;
+    width: fit-content;
     align-content: center;
 }
 
@@ -112,7 +112,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 1.5em;
+    padding-top: 1em;
 }
 
 #block4 {
@@ -120,37 +120,20 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-left: 7px;
-    padding-top: 1.5em;
-}
-
-#block4 ul li{
-    margin: 6px;
-    margin-top: 2px;
-}
-
-#block2 ol li{
-    margin: 6px;
-    margin-top: 2px;
-}
-
-#block2 h2, #block4 h2 {
-    margin-bottom: 0.5em;
+    padding-left: 5px;
+    padding-top: 1em;
 }
 
 #block3 {
     display: flex;
-    justify-content: center;
-    text-align: center;
+    justify-content: center; 
     font-weight: bold;
     font-size: 20px;
-    padding: 0.5em 0;
 }
 
 #block3 ul li{
-    display: inline-block;
+    display: inline;
     list-style: none;
-    white-space: nowrap;
     padding: 0.3em 0.25em;
 }
 
@@ -177,6 +160,16 @@ body {
 
 #block3 ul li a:visited {
     color: rgb(76, 90, 79);
+}
+
+#block4 ul li{
+    margin: 6px;
+    margin-top: 2px;
+}
+
+#block2 ol li{
+    margin: 6px;
+    margin-top: 2px;
 }
 
 #block6 {
@@ -213,10 +206,23 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: fit-content;
+    padding: 1em;
+    padding-left: 1.5em;
+}
+
+.div_for_map {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 1em;
     padding-left: 1.5em;
 }
 
 .img {
     width: 100%;
+}
+
+.map {
+    width: 13em;
 }

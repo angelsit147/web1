@@ -50,7 +50,6 @@ body {
     grid-template-rows: auto 1fr auto;
     min-height: 99vh;
     height: auto;
-    
 }
 
 #block23456 {
@@ -107,21 +106,20 @@ body {
     justify-self: right;
 }
 
-#block2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+#block2, #block4 {
+    display: grid;
+    grid-auto-flow: row;
+    justify-items: center;
     align-items: center;
     padding-top: 1.5em;
 }
 
-#block4 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-left: 7px;
-    padding-top: 1.5em;
+#block4 { 
+    padding-left: 7px; 
+}
+
+#block2 h2, #block4 h2 {
+    margin-bottom: 0.6em;
 }
 
 #block4 ul li{
@@ -134,17 +132,17 @@ body {
     margin-top: 2px;
 }
 
-#block2 h2, #block4 h2 {
-    margin-bottom: 0.5em;
-}
-
 #block3 {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    place-items: center;
     text-align: center;
     font-weight: bold;
     font-size: 20px;
     padding: 0.5em 0;
+}
+
+#block3 ul {
+    padding-inline-start: 0;
 }
 
 #block3 ul li{
@@ -152,10 +150,6 @@ body {
     list-style: none;
     white-space: nowrap;
     padding: 0.3em 0.25em;
-}
-
-#block3 ul {
-    padding-inline-start: 0;
 }
 
 #block3 ul li::after {
@@ -180,21 +174,29 @@ body {
 }
 
 #block6 {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(56px, max-content));
     justify-content: center;
     align-items: center;
-    gap: 12%;
+    column-gap: 12%;
     padding: 0.35em;
 }
+
+#block6 a{
+  display: grid;
+  place-items: center;
+  width: 56px;
+}
+
 #block6 img {
     height: 32px;
     margin-top: 4px;
 }
 
 #main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: grid;
+    grid-auto-flow: row;
+    align-content: center;
     padding: 1.5em;
     padding-left: 0.3em;
 }
@@ -210,9 +212,8 @@ body {
 }
 
 .div_for_photo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    place-items: center;
     padding: 1em;
     padding-left: 1.5em;
 }
